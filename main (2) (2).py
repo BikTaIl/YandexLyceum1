@@ -87,7 +87,7 @@ class NewWindow(QDialog):
 
 if __name__ == "__main__":
 
-    con = sqlite3.connect("proj.sqlite")
+    con = sqlite3.connect("proj.sqlite3")
     cur = con.cursor()
     result = cur.execute("""SELECT passwords FROM popularpasswords
                 WHERE 1 <= ID <= 10000""").fetchall()
